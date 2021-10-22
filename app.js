@@ -32,7 +32,10 @@ $(document).ready(function() {
         var vamval = $(this).val();
         document.getElementById("vamdar").innerHTML = "وامدار: " + vamval;
     })
-
+    $("input[type=number]").change(function() {
+        var cotntv = $(this).val();
+        document.getElementById("count").innerHTML = cotntv;
+    })
 
 
 });
