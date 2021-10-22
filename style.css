@@ -1,0 +1,42 @@
+@font-face {
+    font-family: yekanbakh;
+    src: url(./Xino.ttf);
+}
+
+* {
+    font-family: yekanbakh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainPrimary: #5E35B1;
+    --mainSecondary: #B39DDB;
+    --mainBlack: #222;
+    --mainWhite: #fff;
+    --mainRed: #F44336;
+    --maingray: #E0E0E0;
+}
+
+.navbar {
+    background-color: var(--maingray);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+}
+
+.nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1170px;
+    text-align: center;
+}
+
+.nav-cont {
+    font-size: 1.2rem;
+    position: relative;
+}
