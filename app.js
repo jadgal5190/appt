@@ -20,9 +20,7 @@ $(document).ready(function() {
             var str = document.getElementById("count");
             str.innerHTML = Number(str.innerHTML) + val;
 
-        }
-
-        if (hasClass(mines, "active")) {
+        } else if (hasClass(mines, "active")) {
             var str = document.getElementById("count");
             str.innerHTML = Number(str.innerHTML) - val;
         }
@@ -36,7 +34,10 @@ $(document).ready(function() {
         var cotntv = $(this).val();
         document.getElementById("count").innerHTML = cotntv;
     })
-
+    $("input[type=radio]").change(function() {
+        var cotntve = $(this).val();
+        document.getElementById("vamdar").innerHTML = "وامدار: " + cotntve;
+    })
 
 });
 
