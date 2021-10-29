@@ -47,20 +47,27 @@ $(document).ready(function () {
     })
 
     document.addEventListener('keypress', function (e) {
+
         var keycodee = Number(e.code.substr(-1));
         let val = Number(localStorage.getItem("kootcount"));
-        if (hasClass(plus, "active")) {
+        if (hasClass(plus, "active") && !isNaN(keycodee)) {
             var str = document.getElementById("count");
             var savest = val + keycodee;
             str.innerHTML = savest;
             localStorage.setItem("kootcount", savest);
 
-        } else if (hasClass(mines, "active")) {
+        } else if (hasClass(mines, "active") && !isNaN(keycodee)) {
             var str = document.getElementById("count");
             savest = Number(val) - keycodee;
             str.innerHTML = savest;
 
             localStorage.setItem("kootcount", savest);
+        } else if (e.code == "NumpadSubtract" || e.code == "Minus") {
+            $("#mines").addClass("active");
+            $("#plus").removeClass("active");
+        } else if (e.code == "NumpadAdd" || e.code == "Plus") {
+            $("#plus").addClass("active");
+            $("#mines").removeClass("active");
         }
     });
 
