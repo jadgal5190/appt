@@ -41,11 +41,6 @@ $(document).ready(function () {
         document.getElementById("count").innerHTML = cotntv;
         localStorage.setItem("kootcount", Number(cotntv));
     })
-$("#pisscustom").change(function () {
-        var cotntev = $(this).val();
-        document.getElementById("piss").innerHTML = cotntev;
-       
-    })
     $("input[type=radio]").change(function () {
         var cotntve = $(this).val();
         document.getElementById("vamdar").innerHTML = "وامدار: " + cotntve;
