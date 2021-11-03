@@ -43,7 +43,7 @@ $(document).ready(function () {
     })
 $("#pisscustom").change(function () {
         var cotntev = $(this).val();
-        document.getElementById("piss").innerHTML = cotntv;
+        document.getElementById("piss").innerHTML = cotntev;
        
     })
     $("input[type=radio]").change(function () {
