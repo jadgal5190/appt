@@ -36,10 +36,15 @@ $(document).ready(function () {
         var vamval = $(this).val();
         document.getElementById("vamdar").innerHTML = "وامدار: " + vamval;
     })
-    $("input[type=number]").change(function () {
+    $("#vamdarcustom").change(function () {
         var cotntv = $(this).val();
         document.getElementById("count").innerHTML = cotntv;
         localStorage.setItem("kootcount", Number(cotntv));
+    })
+$("#pisscustom").change(function () {
+        var cotntev = $(this).val();
+        document.getElementById("piss").innerHTML = cotntv;
+       
     })
     $("input[type=radio]").change(function () {
         var cotntve = $(this).val();
