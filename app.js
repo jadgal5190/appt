@@ -49,6 +49,9 @@ $(document).ready(function () {
     document.addEventListener('keypress', function (e) {
 
         var keycodee = Number(e.code.substr(-1));
+if(keycodee==0){
+alert("test")
+}
         let val = Number(localStorage.getItem("kootcount"));
         if (hasClass(plus, "active") && !isNaN(keycodee)) {
             var str = document.getElementById("count");
