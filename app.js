@@ -50,7 +50,8 @@ $(document).ready(function () {
 
         var keycodee = Number(e.code.substr(-1));
 if(keycodee==0){
-alert("test")
+$(#mines).toggleClass("active");
+        $("#plus").toggleClass("active");
 }
         let val = Number(localStorage.getItem("kootcount"));
         if (hasClass(plus, "active") && !isNaN(keycodee)) {
