@@ -50,7 +50,7 @@ $(document).ready(function () {
 
         var keycodee = Number(e.code.substr(-1));
 if(keycodee==0){
-$(#mines).toggleClass("active");
+$("#mines").toggleClass("active");
         $("#plus").toggleClass("active");
 }
         let val = Number(localStorage.getItem("kootcount"));
