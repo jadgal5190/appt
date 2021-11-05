@@ -49,20 +49,21 @@ $(document).ready(function () {
     document.addEventListener('keypress', function (e) {
 
         var keycodee = Number(e.code.substr(-1));
-if(keycodee==0){
-$("#mines").toggleClass("active");
-        $("#plus").toggleClass("active");
-}
+        if (keycodee == 0) {
+            $("#mines").toggleClass("active");
+            $("#plus").toggleClass("active");
+        }
         let val = Number(localStorage.getItem("kootcount"));
         if (hasClass(plus, "active") && !isNaN(keycodee)) {
             var str = document.getElementById("count");
-            var savest = val + keycodee;
+            var savest = Math.abs(val + keycodee);
             str.innerHTML = savest;
             localStorage.setItem("kootcount", savest);
 
         } else if (hasClass(mines, "active") && !isNaN(keycodee)) {
             var str = document.getElementById("count");
-            savest = Number(val) - keycodee;
+
+            savest = Math.abs(Number(val) - keycodee);
             str.innerHTML = savest;
 
             localStorage.setItem("kootcount", savest);
@@ -73,6 +74,18 @@ $("#mines").toggleClass("active");
             $("#plus").addClass("active");
             $("#mines").removeClass("active");
         }
+        if (str.innerHTML == 40 && document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
+            var msg = new SpeechSynthesisUtterance();
+            var voices = window.speechSynthesis.getVoices();
+            msg.voice = voices[6];
+            msg.volume = 1; // From 0 to 1
+            msg.rate = 0.7; // From 0.1 to 10
+            msg.pitch = 0; // From 0 to 2
+            msg.text = "Hooout chell kooott vaamdaaree"
+            msg.lang = 'en';
+            speechSynthesis.speak(msg);
+        }
+
     });
 
 });
