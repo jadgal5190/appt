@@ -75,7 +75,7 @@ $(document).ready(function () {
             $("#mines").removeClass("active");
         }
         if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
-            SetInetrval(function() {
+            setInterval(function() {
 var audio = new Audio('hout.mp3');
 audio.play();
 alert("ok")
