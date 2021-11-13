@@ -2,14 +2,14 @@ $(document).ready(function () {
 
     var storagekoot = localStorage.getItem("kootcount");
     document.getElementById("count").innerHTML = Number(storagekoot);
-    $("#plus").click(function () {
-        $(this).addClass("active");
-        $("#mines").removeClass("active");
-    });
-    $("#mines").click(function () {
-        $(this).addClass("active");
-        $("#plus").removeClass("active");
-    });
+ //   $("#plus").click(function () {
+  //      $(this).addClass("active");
+   //     $("#mines").removeClass("active");
+  //  });
+ //   $("#mines").click(function () {
+  //      $(this).addClass("active");
+  //      $("#plus").removeClass("active");
+ //   });
 
     var plus = document.getElementById("plus");
     var mines = document.getElementById("mines");
