@@ -74,16 +74,10 @@ $(document).ready(function () {
             $("#plus").addClass("active");
             $("#mines").removeClass("active");
         }
-        if (str.innerHTML == 40 && document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
-            var msg = new SpeechSynthesisUtterance();
-            var voices = window.speechSynthesis.getVoices();
-            msg.voice = voices[6];
-            msg.volume = 1; // From 0 to 1
-            msg.rate = 0.7; // From 0.1 to 10
-            msg.pitch = 0; // From 0 to 2
-            msg.text = "Hooout chell kooott vaamdaaree"
-            msg.lang = 'en';
-            speechSynthesis.speak(msg);
+        if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
+            SetInetrval(function() {
+
+},10000)
         }
 
     });
