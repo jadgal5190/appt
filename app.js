@@ -76,7 +76,9 @@ $(document).ready(function () {
         }
         if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
             SetInetrval(function() {
-
+var audio = new Audio('hout.mp3');
+audio.play();
+alert("ok")
 },10000)
         }
 
