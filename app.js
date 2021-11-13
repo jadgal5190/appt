@@ -77,6 +77,9 @@ $(document).ready(function () {
         if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
      var audio = new Audio('hout.mp3');
   audio.play();
+   } else if (document.getElementById("vamdar").innerHTML == "وامدار: ناصرناتو") {
+     var audio = new Audio('naser.mp3');
+  audio.play();
    }
 
     });
