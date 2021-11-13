@@ -77,9 +77,15 @@ $(document).ready(function () {
         if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
      var audio = new Audio('hout.mp3');
   audio.play();
+setTimeout(function(){ 
+audio.stop();
+ }, 5000);
    } else if (document.getElementById("vamdar").innerHTML == "وامدار: ناصرناتو") {
      var audio = new Audio('naser.aac');
   audio.play();
+setTimeout(function(){ 
+audio.stop();
+ }, 5000);
    }
 
     });
