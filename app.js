@@ -75,7 +75,9 @@ $(document).ready(function () {
             $("#mines").removeClass("active");
         }
         if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
-        }
+     var audio = new Audio('hout.mp3');
+  audio.play();
+   }
 
     });
 
@@ -85,7 +87,3 @@ function hasClass(element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
 }
 
-function play() {
-  var audio = new Audio('hout.mp3');
-  audio.play();
-}
