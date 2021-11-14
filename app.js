@@ -75,7 +75,7 @@ $(document).ready(function () {
             $("#mines").removeClass("active");
         }
         if (document.getElementById("vamdar").innerHTML == "وامدار: حوت") {
-     var audio = new Audio('hout.mp3');
+     var audio = new Audio('hout.aac');
   audio.play();
 setTimeout(function(){ 
 audio.stop();
@@ -87,7 +87,7 @@ setTimeout(function(){
 audio.stop();
  }, 5000);
    }  else if (document.getElementById("vamdar").innerHTML == "وامدار: ناکو بچو") {
-     var audio = new Audio('bacho.mp3');
+     var audio = new Audio('bacho.aac');
   audio.play();
 setTimeout(function(){ 
 audio.stop();
