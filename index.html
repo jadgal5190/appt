@@ -38,12 +38,12 @@
         align-items: center;
     }
 
-body{
+/* body{
 background:#212121 !important;
 }
 #count{
 color:#fff;
-}
+} */
 </style>
 
 <body>
@@ -54,7 +54,19 @@ color:#fff;
 
                 <div class="main d-flex justify-content-center flex-column align-items-center">
                     <h2 class="btn btn-warning" style="font-size:5vw;" id="vamdar">وامدار: </h2>
-                    <h1 style="font-size: 20vw;" id="count">0</h1>
+                        <h1 style="font-size: 20vw;" class="text-warning" id="count">0</h1>
+                        <img src="./del.svg" style="width:15vw;margin-top: -8vw;" id="hokmee">
+                        <form action="">
+                            <label for="del">Del</label>
+                            <input type="radio" name="hokm" value="del" id="del">
+                            <label for="Hesht">Hesht</label>
+                            <input type="radio" name="hokm" value="Hesht" id="Hesht">
+                            <label for="Pool">Pool</label>
+                            <input type="radio" name="hokm" value="Pool" id="Pool">
+                            <label for="Kari">Kari</label>
+                            <input type="radio" name="hokm" value="Kari" id="Kari">
+                        </form>
+                 
                     <div class="my-2">
 
                         <a href="#" class="btn btn-primary hesab active" id="plus">+</a>
