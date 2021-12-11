@@ -41,9 +41,14 @@ $(document).ready(function () {
         document.getElementById("count").innerHTML = cotntv;
         localStorage.setItem("kootcount", Number(cotntv));
     })
-    $("input[type=radio]").change(function () {
+    $("input[name=optradio]").change(function () {
         var cotntve = $(this).val();
         document.getElementById("vamdar").innerHTML = "وامدار: " + cotntve;
+    })
+
+    $("input[name=hokm]").change(function () {
+        let cotntve = $(this).val();
+        document.getElementById("hokmee").setAttribute("src",cotntve+".svg")
     })
 
     document.addEventListener('keypress', function (e) {
@@ -101,4 +106,3 @@ audio.stop();
 function hasClass(element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
 }
-
