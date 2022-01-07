@@ -91,13 +91,7 @@ audio.stop();
 setTimeout(function(){ 
 audio.stop();
  }, 5000);
-   }  else if (document.getElementById("vamdar").innerHTML == "وامدار: ناکو بچو") {
-     var audio = new Audio('bacho.aac');
-  audio.play();
-setTimeout(function(){ 
-audio.stop();
- }, 5000);
-   }else if (document.getElementById("vamdar").innerHTML == "وامدار: اکبر زامات") {
+   }  else if (document.getElementById("vamdar").innerHTML == "وامدار: اکبر زامات") {
      var audio = new Audio('akbar.aac');
   audio.play();
 setTimeout(function(){ 
