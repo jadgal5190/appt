@@ -92,7 +92,7 @@ setTimeout(function(){
 audio.stop();
  }, 5000);
    }  else if (document.getElementById("vamdar").innerHTML == "وامدار: اکبر زامات") {
-     var audio = new Audio('akbar2.aac');
+     var audio = new Audio('akbar.aac');
   audio.play();
 setTimeout(function(){ 
 audio.stop();
