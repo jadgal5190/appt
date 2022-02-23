@@ -85,8 +85,8 @@ $(document).ready(function () {
 setTimeout(function(){ 
 audio.stop();
  }, 5000);
-   } else if (document.getElementById("vamdar").innerHTML == "وامدار: ناصرناتو") {
-     var audio = new Audio('naser.aac');
+   } else if (document.getElementById("vamdar").innerHTML == "وامدار: معاویه") {
+     var audio = new Audio('mavie.aac');
   audio.play();
 setTimeout(function(){ 
 audio.stop();
